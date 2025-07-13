@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* 
 ===========================
 Fonts
@@ -8,4 +14,36 @@ Fonts
     src: url("../fonts/vazir/Vazir-FD-WOL.woff2") format("woff2"),
         url("../fonts/vazir/Vazir-Bold-FD-WOL.woff") format("woff"),
         url("../fonts/vazir/Vazir-Bold-FD-WOL.ttf") format("truetype");
+}
+
+/* 
+===========================
+Variables
+===========================
+*/
+:root {
+    --clr-primary: #e2711d;
+    --clr-primary-light: #ffb627;
+    --clr-gray-1: #102a42;
+    --clr-gray-5: #617d98;
+    --clr-gray-10: #f1f5f8;
+    --clr-white: #fff;
+    --ff-primary: "vazir" , sans-serif;
+}
+/* 
+===========================
+Global-style
+===========================
+*/
+
+body {
+    font-family: var(--ff-primary);
+    background-color: var(--clr-white);
+    color: var(--clr-gray-1);
+    text-align: right;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
 }
