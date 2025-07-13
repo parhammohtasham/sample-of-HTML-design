@@ -29,6 +29,8 @@ Variables
     --clr-gray-10: #f1f5f8;
     --clr-white: #fff;
     --ff-primary: "vazir" , sans-serif;
+    --radius:0.5rem;
+    --transition: all 0.3s linear;
 }
 /* 
 ===========================
@@ -47,3 +49,72 @@ body {
 a {
     text-decoration: none;
 }
+
+h1 {
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width:800px) {
+    h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+}
+
+.btn {
+    background-color: var(--clr-primary);
+    padding: 0.5rem 1rem;
+    border-radius:var(--radius);
+    color: var(--clr-white);
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background-color: var(--clr-primary-light);
+    color: var(--clr-primary);
+}
+/* 
+===========================
+Header
+===========================
+*/
+.header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/header.jpg) center/cover no-repeat fixed;
+    position: relative;
+}
+
+.banner{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+
+}
+
+.banner h1{
+    color: var(--clr-primary);
+    margin-bottom: 2rem;
+}
+
+.banner h2{
+    color: var(--clr-white);
+    margin-bottom: 3rem;
+}
+
+.btn-banner {
+    font-size: 1.25rem;
+    outline: 0.125rem solid var(--clr-primary);
+    outline-offset: 0.25rem;
+    padding: 0.75rem 1.25rem;
+}
+
