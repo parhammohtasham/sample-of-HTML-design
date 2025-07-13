@@ -1,0 +1,11 @@
+/* 
+===========================
+Fonts
+===========================
+*/
+@font-face {
+    font-family: "vazir";
+    src: url("../fonts/vazir/Vazir-FD-WOL.woff2") format("woff2"),
+        url("../fonts/vazir/Vazir-Bold-FD-WOL.woff") format("woff"),
+        url("../fonts/vazir/Vazir-Bold-FD-WOL.ttf") format("truetype");
+}
