@@ -118,7 +118,7 @@ h4 {
   color: var(--clr-primary);
 }
 
-.section-title{
+.section-title {
   margin-bottom: 2rem;
 }
 
@@ -232,7 +232,8 @@ Features
 About
 ===========================
 */
-.about-image , .about-info {
+.about-image,
+.about-info {
   padding: 2rem 0;
 }
 
@@ -252,7 +253,7 @@ About
   transform: scale(1.2);
 }
 
-.about-text{
+.about-text {
   color: var(--clr-gray-5);
 }
 
@@ -260,14 +261,76 @@ About
   margin-top: 1.5rem;
 }
 
-@media screen and (min-width:992px) {
-  .about-image{
+@media screen and (min-width: 992px) {
+  .about-image {
     float: left;
     width: 50%;
   }
-  
+
   .about-info {
-    float:right;
+    float: right;
     width: 50%;
+  }
+}
+
+.products {
+  background: var(--clr-gray-10);
+}
+
+.products article {
+  padding: 2rem 0;
+}
+
+.product-text {
+  color: var(--clr-gray-5);
+  max-width: 26rem;
+  margin-left: auto;
+}
+
+.product-btn {
+  margin-top: 1.5rem;
+}
+
+.products-cards .product {
+  margin-bottom: 2rem;
+}
+
+.product .product-image {
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  height: 17rem;
+  object-fit: cover;
+}
+
+.product-price {
+  color: var(--clr-primary);
+  direction: rtl;
+}
+
+@media screen and (min-width: 778px) {
+  .product {
+    float: right;
+    width: 50%;
+    padding-left: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .product {
+    width: 33.3%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products-info {
+    float: right;
+    width: 30%;
+  }
+  .products-cards {
+    float: left;
+    width: 70%;
+  }
+  .product {
+    padding-left: 0;
+    padding-right: 2rem;
+    margin-bottom: 0;
   }
 }
