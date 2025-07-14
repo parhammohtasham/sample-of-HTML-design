@@ -30,7 +30,7 @@ Variables
   --clr-white: #fff;
   --ff-primary: "vazir", sans-serif;
   --radius: 0.5rem;
-  --transition: all 0.3s linear;
+  --transition: all 0.2s linear;
 }
 /* 
 ===========================
@@ -121,7 +121,81 @@ h4 {
 .section-title {
   margin-bottom: 2rem;
 }
+/* 
+===========================
+Navbar
+===========================
+*/
+.nav-btn {
+  font-size: 1.5rem;
+  color: var(--clr-primary);
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  z-index: 1;
+  cursor: pointer;
+}
 
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--clr-gray-10);
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+  transform: translateX(100%);
+}
+
+.showNav{
+  transform: translateX(0);
+}
+.navbar-header {
+  text-align: left;
+
+}
+
+.nav-close {
+  font-size: 2.5rem;
+  color: #f29c9c;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.nav-close:hover{
+  color: #bb2525;
+}
+@media screen and (min-width:768px) {
+  .navbar{
+    width: 30vw;
+    max-width: 20rem;
+  }
+}
+.nav-items {
+  list-style-type: none;
+  direction: rtl;
+}
+.nav-items a{
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  color: var(--clr-gray-5);
+  transition: var(--transition);
+}
+
+.nav-items a:hover{
+  background-color: var(--clr-primary-light);
+  border-right: 0.25rem solid var(--clr-primary);
+  padding-right: 1.5rem;
+  color: var(--clr-primary);
+}
+
+.nav-items a i {
+  font-size: 1.4rem;
+  margin-left: 0.3rem;
+}
 /* 
 ===========================
 Header
@@ -488,3 +562,31 @@ Contact Us
 Footer
 ===========================
 */
+.footer {
+  background-color: #222;
+  text-align: center;
+  color: var(--clr-white);
+}
+
+.social-icon {
+  color: var(--clr-white);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  margin-right: 1rem;
+  transition: var(--transition);
+}
+
+.social-icon:hover{
+  color: var(--clr-primary);
+}
+
+.footer-text{
+  font-size: 1.1rem;
+  direction: rtl;
+}
+
+.footer-text span{
+  color: var(--clr-primary);
+  font-size: 1.3rem;
+}
