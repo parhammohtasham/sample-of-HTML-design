@@ -409,3 +409,82 @@ Services
 Contact Us
 ===========================
 */
+.contact {
+  background-color: var(--clr-gray-10);
+}
+
+.contact article {
+  margin: 1rem 0;
+}
+
+.contact-item {
+  margin-bottom: 1.7rem;
+}
+
+.contact-title {
+  color: var(--clr-primary);
+  font-weight: 400;
+  direction: rtl;
+}
+
+.contact-text {
+  font-size: 1.1rem;
+}
+
+.contact-form {
+  background-color: var(--clr-white);
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+
+.contact-form:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h3 {
+  color: var(--clr-gray-5);
+  padding-top: 1.25rem;
+  max-width: 35rem;
+}
+
+.form-group {
+  padding: 1rem 1.5rem;
+}
+
+.form-group .form-control {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  background-color: var(--clr-gray-10);
+  border-radius: var(--radius);
+  direction: rtl;
+}
+
+.form-control::placeholder {
+  font-family: var(--ff-primary);
+  color: var(--clr-gray-1);
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  font-family: var(--ff-primary);
+}
+
+@media screen and (min-width: 992px) {
+  .contact article {
+    float: right;
+    width: 50%;
+  }
+}
+/* 
+===========================
+Footer
+===========================
+*/
